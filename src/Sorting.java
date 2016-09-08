@@ -28,13 +28,7 @@ public class Sorting {
 			args[left] = args[lcount];
 			args[lcount] = pivot;
 			
-			if (left < lcount - 1)
-				qsort(args, left, lcount - 1);
-			if (lcount + 1 < right)
-				qsort(args, lcount + 1, right);
+			System.out.print(lcount + "." + rcount);
 		}
-		
-		Printer.printer(args, right);
-		System.out.print("/");
 	}
 }
